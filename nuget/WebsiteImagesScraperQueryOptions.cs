@@ -12,9 +12,14 @@ namespace APIVerve.API.WebsiteImagesScraper
     {
         /// <summary>
         /// The URL of the website you want to scrape images from
-        /// Example: https://example.com
         /// </summary>
         [JsonProperty("url")]
         public string Url { get; set; }
+
+        /// <summary>
+        /// The limit of image URLs returned from your query
+        /// </summary>
+        [JsonProperty("maxlinks")]
+        public string Maxlinks { get; set; }
     }
 }
