@@ -508,8 +508,9 @@ from apiverve_websiteimagesscraper.apiClient import WebimagescraperAPIClient
 
 api = WebimagescraperAPIClient("[YOUR_API_KEY]")
 
+query = { "url": "https://en.wikipedia.org/wiki/Solar_System" }
+
 try:
-    query = { "url": "https://en.wikipedia.org/wiki/Solar_System" }
     result = api.execute(query)
     print(result)
 finally:
