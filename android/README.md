@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:webimagescraper-api:1.1.13'
+    implementation 'com.github.apiverve:webimagescraper-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ WebsiteImagesScraperAPIClient client = new WebsiteImagesScraperAPIClient("YOUR_A
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("url", "https://example.com");
+    parameters.put("url", "https://en.wikipedia.org/wiki/Solar_System");
     parameters.put("maxlinks", 25);
 
     // Execute the request
