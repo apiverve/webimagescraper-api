@@ -47,6 +47,8 @@ paths:
                 data:
                   url: http://en.wikipedia.org/wiki/Solar_System
                   imageCount: 25
+                  externalImageCount: 0
+                  internalImageCount: 25
                   images:
                     - src: >-
                         http://en.wikipedia.org/wiki/Solar_System/static/images/icons/wikipedia.png
@@ -123,6 +125,7 @@ paths:
                     - src: >-
                         http://en.wikipedia.org/wiki/Solar_System//upload.wikimedia.org/wikipedia/commons/thumb/5/56/Distant_object_orbits_%2B_Planet_Nine.png/330px-Distant_object_orbits_%2B_Planet_Nine.png
                       external: false
+                  uniqueDomains: []
                   maxLinksReached: true
         '401':
           description: Your request was not authorized, or your API Key was invalid
