@@ -4,24 +4,39 @@ declare module '@apiverve/webimagescraper' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface webimagescraperResponse {
     status: string;
     error: string | null;
     data: WebsiteImagesScraperData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface WebsiteImagesScraperData {
-      imageCount:      number;
-      images:          Image[];
-      maxLinksReached: boolean;
-      url:             string;
+      url:                null | string;
+      imageCount:         number | null;
+      externalImageCount: number | null;
+      internalImageCount: number | null;
+      images:             Image[];
+      uniqueDomains:      any[];
+      maxLinksReached:    boolean | null;
   }
   
   interface Image {
-      external: boolean;
-      src:      string;
+      src:      null | string;
+      external: boolean | null;
   }
 
   export default class webimagescraperWrapper {
