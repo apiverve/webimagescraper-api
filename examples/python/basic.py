@@ -14,14 +14,20 @@ API_URL = 'https://api.apiverve.com/v1/webimagescraper'
 
 def call_webimagescraper_api():
     """
-    Make a GET request to the Website Images Scraper API
+    Make a POST request to the Website Images Scraper API
     """
     try:
+        # Request body
+        request_body &#x3D; {
+    &#x27;url&#x27;: &#x27;https://en.wikipedia.org/wiki/Solar_System&#x27;
+}
+
         headers = {
-            'x-api-key': API_KEY
+            'x-api-key': API_KEY,
+            'Content-Type': 'application/json'
         }
 
-        response = requests.get(API_URL, headers=headers)
+        response = requests.post(API_URL, headers=headers, json=request_body)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
