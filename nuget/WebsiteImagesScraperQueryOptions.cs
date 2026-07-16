@@ -20,6 +20,6 @@ namespace APIVerve.API.WebsiteImagesScraper
         /// The limit of image URLs returned from your query
         /// </summary>
         [JsonProperty("maxlinks")]
-        public string Maxlinks { get; set; }
+        public int? Maxlinks { get; set; }
     }
 }
