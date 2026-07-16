@@ -25,29 +25,53 @@ namespace APIVerve.API.WebsiteImagesScraper
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
+        [JsonProperty("url")]
+        public Uri Url { get; set; }
+
         [JsonProperty("imageCount")]
-        public long ImageCount { get; set; }
+        public long? ImageCount { get; set; }
+
+        [JsonProperty("externalImageCount")]
+        public long? ExternalImageCount { get; set; }
+
+        [JsonProperty("internalImageCount")]
+        public long? InternalImageCount { get; set; }
 
         [JsonProperty("images")]
         public Image[] Images { get; set; }
 
-        [JsonProperty("maxLinksReached")]
-        public bool MaxLinksReached { get; set; }
+        [JsonProperty("uniqueDomains")]
+        public object[] UniqueDomains { get; set; }
 
-        [JsonProperty("url")]
-        public Uri Url { get; set; }
+        [JsonProperty("maxLinksReached")]
+        public bool? MaxLinksReached { get; set; }
     }
 
     public partial class Image
     {
-        [JsonProperty("external")]
-        public bool External { get; set; }
-
         [JsonProperty("src")]
         public Uri Src { get; set; }
+
+        [JsonProperty("external")]
+        public bool? External { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
