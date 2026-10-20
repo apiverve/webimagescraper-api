@@ -1,13 +1,10 @@
 # Website Images Scraper API
 
-Web Image Scraper is a simple tool for scraping images from a website. It returns the URLs of the images found on the website.
+Website Images Scraper is an image scraper API that extracts image URLs and hosting domains from any web page. Send a page URL to retrieve direct image sources, breakdown counts for internal versus external assets, and unique hosting domains.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 [![npm version](https://img.shields.io/npm/v/@apiverve/webimagescraper.svg)](https://www.npmjs.com/package/@apiverve/webimagescraper)
 
-This is a Javascript Wrapper for the [Website Images Scraper API](https://apiverve.com/marketplace/webimagescraper?utm_source=npm&utm_medium=readme)
+This is a JavaScript wrapper for the [Website Images Scraper API](https://apiverve.com/marketplace/webimagescraper?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -28,15 +25,15 @@ yarn add @apiverve/webimagescraper
 ## Configuration
 
 Before using the Website Images Scraper API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=readme)
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
 ## Quick Start
 
-[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=readme)
+[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=referral&utm_content=readme)
 
-The Website Images Scraper API documentation is found here: [https://docs.apiverve.com/ref/webimagescraper](https://docs.apiverve.com/ref/webimagescraper?utm_source=npm&utm_medium=readme).
+The Website Images Scraper API documentation is found here: [https://docs.apiverve.com/ref/webimagescraper](https://docs.apiverve.com/ref/webimagescraper?utm_source=npm&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -238,7 +235,7 @@ async function makeRequest() {
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -250,12 +247,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=readme), [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=readme), and [Refund Policy](https://apiverve.com/refund?utm_source=npm&utm_medium=readme).
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=referral&utm_content=readme) and [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 

@@ -30,7 +30,7 @@ class webimagescraperWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/webimagescraper';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"url":{"type":"string","required":true,"format":"url"},"maxlinks":{"type":"integer","required":false,"min":1,"max":100,"default":25}};
+        this.validationRules = {"url":{"type":"string","required":true,"format":"url"},"maxlinks":{"type":"integer","required":false,"min":1,"max":100,"default":25},"includequery":{"type":"boolean","required":false,"default":false}};
     }
 
     /**

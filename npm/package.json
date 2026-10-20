@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/webimagescraper",
-  "version": "1.2.0",
-  "description": "Web Image Scraper is a simple tool for scraping images from a website. It returns the URLs of the images found on the website.",
+  "version": "1.2.2",
+  "description": "Website Images Scraper is an image scraper API that extracts image URLs and hosting domains from any web page. Send a page URL to retrieve direct image sources, breakdown counts for internal versus external assets, and unique hosting domains.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "web image scraper", "web image scraping", "web image scrape", "web image api", "web image tool"
+    "image scraper api", "scraper api", "scrape images online api", "web scraping api for images", "scrape images from url"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/webimagescraper-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/webimagescraper?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/webimagescraper?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
