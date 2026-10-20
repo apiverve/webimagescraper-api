@@ -68,7 +68,8 @@ namespace APIVerve.API.WebsiteImagesScraper
         private static readonly Dictionary<string, ValidationRule> _validationRules = new Dictionary<string, ValidationRule>
         {
             { "url", new ValidationRule { Type = "string", Required = true, Format = "url" } },
-            { "maxlinks", new ValidationRule { Type = "integer", Required = false, Min = 1, Max = 100 } }
+            { "maxlinks", new ValidationRule { Type = "integer", Required = false, Min = 1, Max = 100 } },
+            { "includequery", new ValidationRule { Type = "boolean", Required = false } }
         };
 
         /// <summary>Format validation patterns</summary>

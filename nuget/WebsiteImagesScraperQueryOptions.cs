@@ -21,5 +21,11 @@ namespace APIVerve.API.WebsiteImagesScraper
         /// </summary>
         [JsonProperty("maxlinks")]
         public int? Maxlinks { get; set; }
+
+        /// <summary>
+        /// Keep query strings on the scraped image URLs instead of trimming them
+        /// </summary>
+        [JsonProperty("includequery")]
+        public bool? Includequery { get; set; }
     }
 }
